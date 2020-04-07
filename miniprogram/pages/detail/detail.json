@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-panel": "../../miniprogram_npm/weapp/dist/panel/index",
+    "van-button": "../../miniprogram_npm/weapp/dist/button/index",
+    "van-popup": "../../miniprogram_npm/weapp/dist/popup/index",
+    "van-picker": "../../miniprogram_npm/weapp/dist/picker/index"
+  }
+}

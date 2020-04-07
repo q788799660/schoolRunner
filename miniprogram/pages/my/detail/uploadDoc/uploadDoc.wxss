@@ -1,0 +1,17 @@
+.myJobDoc{
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx;
+}
+.icon{
+  width: 50rpx;
+  height: 50rpx;
+}
+.myJobList{
+  display: flex;
+  justify-content: space-between;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 20rpx;
+}
+

@@ -1,0 +1,25 @@
+.footer{
+  position: fixed;
+  left: calc(50% - 16rpx - 33rpx);
+}
+.btn{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.panel{
+  background: rgb(170, 66, 66)
+}
+.call{
+  color: rgba(25, 137, 250, 1);
+  margin: 20rpx 20rpx;
+}
+.address{
+  margin: 20rpx 20rpx;
+  color: rgba(179, 197, 215, 1);
+}
+.context{
+  line-height: 70rpx;
+  margin: 20rpx 20rpx;
+
+}

@@ -1,0 +1,22 @@
+<view>
+	<van-panel title="{{info.title}}" desc="{{time}}" status="{{info.status}}" use-footer-slot>
+		<view class="call">{{info.phone}}</view>
+		<view class="address">{{info.address}}</view>
+		<view class="context">{{info.context}}</view>
+		<!-- <view slot="footer" class="footer">
+			
+		</view> -->
+	</van-panel>
+	<button class="btn" type="primary" bindtap="join">我要报名</button>
+	<van-popup show="{{ show }}" bind:close="onClose" position="bottom" custom-style="height: 50%;">
+	<van-picker
+	show-toolbar
+	title="选择简历"
+	bind:cancel="onCancel"
+  bind:confirm="onConfirm"
+  columns="{{ title }}"
+  default-index="{{ 0 }}"
+  bind:change="onChange"
+/>
+</van-popup>
+</view>

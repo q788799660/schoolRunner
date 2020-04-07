@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "van-search": "../../miniprogram_npm/weapp/dist/search/index",
+    "van-row": "../../miniprogram_npm/weapp/dist/row/index",
+    "van-col": "../../miniprogram_npm/weapp/dist/col/index",
+    "van-image": "../../miniprogram_npm/weapp/dist/image/index",
+    "van-divider": "../../miniprogram_npm/weapp/dist/divider/index",
+    "van-icon": "../../miniprogram_npm/weapp/dist/icon/index",
+    "van-panel": "../../miniprogram_npm/weapp/dist/panel/index",
+    "van-notice-bar": "../../miniprogram_npm/weapp/dist/notice-bar/index",
+    "van-tag": "../../miniprogram_npm/weapp/dist/tag/index",
+    "van-card": "../../miniprogram_npm/weapp/dist/card/index"
+  }
+}

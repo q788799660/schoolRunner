@@ -1,0 +1,68 @@
+.page{
+
+}
+.info{
+  display: flex;
+  height: 300rpx;
+  background: linear-gradient(to right,rgb(106, 203, 201),rgb(20, 218, 198));
+}
+.avatar{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 50rpx 0 0 50rpx;
+}
+.info_text{
+  margin: 70rpx 0 0 30rpx;
+}
+.setInfo{
+  color: #cac7c7;
+  margin-top: 30rpx;
+  font-size: 26rpx;
+}
+.line{
+  height: 100rpx;
+  background: white;
+  border-radius: 80%;
+  width: 100%;
+  position: absolute;
+  top: 250rpx;
+  overflow: hidden;
+}
+.tic{
+  margin: 50rpx;
+  display: flex;
+  justify-content: space-between;
+
+}
+.split{
+  background: #eeebeb;
+  height: 1rpx;
+  margin: 0 50rpx;
+}
+.piece{
+  margin: 50rpx; 
+  margin-top: 60rpx;
+}
+.piece_layout{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.branch{
+  height: 80rpx;
+  line-height: 60rpx;
+
+}
+.right{
+  color: #cac7c7;
+}
+.out{
+  margin: 50rpx;
+}
+.btn{
+  width: 80%;
+  background: rgba(7, 193, 96, 1);
+  color: white;
+}

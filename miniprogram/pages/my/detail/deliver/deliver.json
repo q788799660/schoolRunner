@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-cell": "../../../../miniprogram_npm/weapp/dist/cell/index",
+    "van-cell-group": "../../../../miniprogram_npm/weapp/dist/cell-group/index"
+  },
+  "navigationBarTitleText":"我的投递"
+}

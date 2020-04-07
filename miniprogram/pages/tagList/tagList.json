@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-divider": "../../miniprogram_npm/weapp/dist/divider/index",
+    "van-icon": "../../miniprogram_npm/weapp/dist/icon/index",
+    "van-panel": "../../miniprogram_npm/weapp/dist/panel/index",
+    "van-tag": "../../miniprogram_npm/weapp/dist/tag/index"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-search": "../../miniprogram_npm/weapp/dist/search/index",
+    "van-panel": "../../miniprogram_npm/weapp/dist/panel/index",
+    "van-tag": "../../miniprogram_npm/weapp/dist/tag/index"
+  },
+  "enablePullDownRefresh": false,
+  "navigationBarTitleText":"搜索"
+}

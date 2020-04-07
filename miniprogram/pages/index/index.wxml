@@ -1,0 +1,55 @@
+<view>
+  <van-notice-bar
+    left-icon="/images/icon/公告.png"
+    text="{{notice}}"
+    class="notice"
+  />
+	<!-- 输入框 -->
+  <view class="input" bindtap="search">
+	  <van-search value="{{ value }}" shape="round" background="#34c3bc" placeholder="搜索兼职" />  
+  </view>
+	<!-- 轮播图 -->
+	<view class="swiperBox">
+		<swiper indicator-dots autoplay class="swiper">
+			<block wx:for="{{swiper}}" wx:for-item="item" wx:index="index" wx:key="index">
+				<swiper-item>
+					<view class="swiper-item {{item}}">
+						<image src="{{item.img}}" mode="widthFix"></image>
+					</view>
+				</swiper-item>
+			</block>
+		</swiper>	
+	</view>
+
+	<!-- 功能列表 -->
+	<view class="listBox">
+		<van-row>
+			<van-col span="8" wx:for="{{list}}" wx:for-item="item" wx:index="index" wx:key="index" data-name="{{item.tag}}" bindtap="tagDetail">
+				<view class="list">
+					<view>
+						<van-image width="40" height="40" src="{{item.img}}" />
+					</view>
+					<text>{{item.text}}</text>
+				</view>
+			</van-col>
+		</van-row>
+	</view>
+  	<!-- 最新分割线 -->
+	<van-divider contentPosition="center" customStyle="color: #1989fa;border-color: #eaeaea;font-size: 17px;margin:40rpx">
+		<van-icon name="new" />最新兼职
+	</van-divider>
+	<!-- 最新兼职列表 -->
+	<van-panel wx:for="{{new}}" wx:for-item="item" wx:for-index="index" wx:key="key" title="{{item.title}}" desc="{{item.date}}" status="{{item.status}}" data-id="{{item._id}}" data-type="{{item.type}}" bindtap="detail">
+		<!-- <view>内容</view> -->
+		<van-tag type="success" class="tag">{{item.tagName}}</van-tag>
+	</van-panel>
+	<!-- 火爆分割线 -->
+	<!-- <van-divider contentPosition="center" customStyle="color: #1989fa;border-color: #eaeaea;font-size: 17px;margin:40rpx">
+		<van-icon name="fire" />火爆兼职
+	</van-divider> -->
+	<!-- 火爆兼职列表 -->
+	<!-- <van-panel wx:for="{{fire}}" wx:for-item="item" wx:for-index="index" wx:key="key" title="{{item.title}}" desc="{{fireTime}}" status="{{item.status}}" data-id="{{item._id}}" data-type="{{item.type}}" bindtap="detail"> -->
+		<!-- <view>内容</view> -->
+		<!-- <van-tag type="success" class="tag">{{item.tagName}}</van-tag>
+	</van-panel> -->
+</view>

@@ -1,0 +1,12 @@
+textarea{
+  margin: 20px auto;
+  border: 1px solid #eaeaea;
+  width: 80%;
+}
+.context{
+  
+}
+.btn{
+  position: absolute;
+  left: calc(50% - 30px);
+}

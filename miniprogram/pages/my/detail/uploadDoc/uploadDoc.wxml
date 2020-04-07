@@ -1,0 +1,16 @@
+<view class="myJobDoc" bindtap="onChange">
+	<view>我的简历</view>
+	<view >
+    <image src="{{icon[0]}}" wx:if="{{show}}" class="icon"></image>
+    <image src="{{icon[1]}}" wx:else class="icon"></image>
+	</view>
+</view>
+<view wx:if="{{!show}}">
+	<view wx:for="{{myJobList}}" wx:key="key" wx:for-index="index" data-index="{{index}}" bindtap="openDoc" class="myJobList" >
+		<view>{{item.title}}</view>
+		<view>{{item.date}}</view>
+	</view>
+</view>
+<view>
+	<button type="primary" bindtap="upload">上传简历</button>
+</view>

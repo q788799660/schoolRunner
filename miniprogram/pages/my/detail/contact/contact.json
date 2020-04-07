@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-cell": "../../../../miniprogram_npm/weapp/dist/cell/index",
+    "van-cell-group": "../../../../miniprogram_npm/weapp/dist/cell-group/index",
+    "van-image": "../../../../miniprogram_npm/weapp/dist/image/index"
+  },
+  "enablePullDownRefresh": false,
+  "navigationBarTitleText":"联系我们"
+}

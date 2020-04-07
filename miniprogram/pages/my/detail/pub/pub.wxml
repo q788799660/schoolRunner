@@ -1,0 +1,13 @@
+<van-cell-group>
+	<van-field value="{{ title }}" required clearable label="招聘标题" placeholder="请输入标题" bind:change="onTitle" />
+	<van-field value="{{ phone }}" required clearable label="手机号" placeholder="请输入手机号" type="number" bind:change="onPhone" />
+	<van-field value="{{ address }}" required clearable label="招聘地址" placeholder="请输入招聘地址" bind:change="onAddress" />
+	<van-cell title="招聘类型" is-link bindtap="isShow" value="{{tag}}"/>
+  <van-popup show="{{ show }}" position="bottom" custom-style="height: 20%;" bind:close="onClose" custom-style="height:50%">
+		<van-picker title="选择招聘类型" columns="{{ columns }}" bind:cancel="onCancel" bind:confirm="onConfirm" show-toolbar />
+	</van-popup>
+
+	<textarea placeholder="请输入招聘内容" value="{{ context }}" placeholder-class="context" bindinput="onContext"></textarea>
+</van-cell-group>
+
+<van-button type="primary" class="btn" bind:click="pub">发布</van-button>

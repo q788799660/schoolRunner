@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-field": "../../../../miniprogram_npm/weapp/dist/field/index",
+    "van-popup": "../../../../miniprogram_npm/weapp/dist/popup/index",
+    "van-button": "../../../../miniprogram_npm/weapp/dist/button/index",
+    "van-picker": "../../../../miniprogram_npm/weapp/dist/picker/index",
+    "van-cell": "../../../../miniprogram_npm/weapp/dist/cell/index"
+  },
+  "enablePullDownRefresh": false,
+  "navigationBarTitleText":"发布招聘"
+}

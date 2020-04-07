@@ -1,0 +1,37 @@
+<view class="page">
+  <!-- 头像信息 -->
+  <view class="info">
+    <open-data type="groupName" open-gid="user"></open-data>
+    <view class="avatar">
+      <!-- <open-data type="userAvatarUrl" ></open-data> -->
+      <image src="{{userInfo.avatarUrl}}" mode="widthFix" style="height: inherit;width: inherit"></image>
+    </view>
+    <view class="info_text">
+      <view>{{userInfo.nickName}}</view>
+      <!-- <open-data type="userNickName"></open-data> -->
+      <!-- <view class="setInfo" bindtap="editInfo">编辑个人信息</view>      -->
+    </view>
+    <view class="line"></view>
+  </view>
+  <!-- 兼职记录 -->
+  <!-- <view class="tic">
+    <view >兼职记录：</view>
+    <view><text style="color:red;padding-right: 10rpx">{{during}}</text>分钟</view>
+  </view> -->
+  <view class="split"></view>
+  <!-- 功能块 -->
+  <view class="piece"> 
+    <view wx:for-items="{{piece}}" wx:for-item="item" wx:key="index" class="branch">
+      <navigator url="{{item.url}}" class="piece_layout" hover-class="none">
+        <view>
+          {{item.name}}
+        </view>
+        <view class="right" >
+          >
+        </view>
+      </navigator>
+    </view>  
+  </view>
+  <view class="split"></view>
+  <button open-type="getUserInfo" bindgetuserinfo="getUserInfomation" class="btn" wx:if="{{show}}">点击获取用户信息</button>
+</view>

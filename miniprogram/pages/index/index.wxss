@@ -1,0 +1,39 @@
+.notice{
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  
+}
+.input{
+  padding-top: 41px;
+}
+.swiperBox{
+  width: 100%;
+  text-align: center;
+}
+.swiper{
+  height: 175px;
+}
+.listImg{
+  width: 10rpx;
+}
+.list{
+  margin: 25rpx 0;
+  text-align: center;
+}
+.fireHeader{
+  color: red;
+}
+.listBox{
+  background: linear-gradient(to right, rgb(255, 246, 224),rgb(237, 210, 141));
+  /* border: 1px solid rgb(249, 219, 140); */
+  width: 95%; 
+  margin: 20rpx auto;
+  border-radius: 40px;
+}
+
+.tag{
+  position: relative;
+  top: -150rpx;
+  left: 0rpx;
+}

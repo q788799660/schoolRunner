@@ -1,0 +1,19 @@
+	<!-- 输入框 -->
+  <view class="input" bindtap="search">
+	  <van-search value="{{ value }}" shape="round" background="#34c3bc" placeholder="搜索兼职" bind:change="onChange" bind:search="onSearch"/>  
+  </view>
+  
+  	<van-panel 
+	wx:for="{{new}}" 
+	wx:for-item="item" 
+	wx:for-index="index" 
+	wx:key="key" 
+	title="{{item.title}}" 
+	desc="{{item.date}}" 
+	status="{{item.status}}"
+	data-id="{{item._id}}"
+	data-type="{{item.type}}"
+	bindtap="detail"
+	>
+		<van-tag type="success" class="tag">{{item.tagName}}</van-tag>
+	</van-panel>

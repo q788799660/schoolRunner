@@ -1,0 +1,3 @@
+<van-cell-group>
+  <van-cell wx:for="{{list}}" title="{{item.title}}" value="{{item.jobDocList[0].date}}" wx:key="key" />
+</van-cell-group>

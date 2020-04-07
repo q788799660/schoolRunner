@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+
+  },
+  "enablePullDownRefresh": false,
+  "navigationBarTitleText":"简历上传"
+}
