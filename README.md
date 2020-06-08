@@ -53,6 +53,7 @@
   其中自定义权限配置
 
   ![自定义权限](https://images.gitee.com/uploads/images/2020/0406/091308_070581e2_4896788.png "O3JC`]Z)O}ZE2KD88_I7`4Y.png")
+
 6. **新建并部署云函数**
   
   在 cloudfunctions 中找到 `login` 和 `upload` 文件夹，右击后选择 `创建并部署：所有文件`
