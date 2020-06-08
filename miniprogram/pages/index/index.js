@@ -7,8 +7,6 @@ Page({
     swiper:[{
       img:"../../images/swiper/swiper1.jpg"
     },{
-      img:"../../images/swiper/swiper2.jpg"
-    },{
       img:"../../images/swiper/swiper3.jpg"
     }
   ],

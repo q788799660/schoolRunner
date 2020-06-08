@@ -50,6 +50,7 @@ Page({
     let tag = this.data.tag;
     let t = '';
     let {address,title,phone,context} = this.data;
+    
     if(!this.checkPhone(phone)){
       wx.showToast({
         title: '手机号不正确',
@@ -122,7 +123,7 @@ Page({
     });
   },
   checkPhone(phone){
-    let reg = /1([38][0-9]|4[579]|5[0-3,5-9]|6[6]|7[0135678]|9[89])\d{8}/g
-    return reg.test(reg);
+    let reg = /1([38][0-9]|4[579]|5[0-3,5-9]|6[6]|7[0135678]|9[89])\d{8}/g;
+    return reg.test(phone);
   }
 })

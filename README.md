@@ -47,10 +47,17 @@
   | jobDetail | 发布的招聘详细信息 | 自定义权限                   |
   | jobList   | 用户简历列表       | 仅创建者可读写               |
 
+![](https://imgkr.cn-bj.ufileos.com/225a4d9b-bab2-423b-a7ad-ecf3adfec686.png)
+
 
   其中自定义权限配置
 
   ![自定义权限](https://images.gitee.com/uploads/images/2020/0406/091308_070581e2_4896788.png "O3JC`]Z)O}ZE2KD88_I7`4Y.png")
+6. **新建并部署云函数**
+  
+  在 cloudfunctions 中找到 `login` 和 `upload` 文件夹，右击后选择 `创建并部署：所有文件`
+  
+![](https://imgkr.cn-bj.ufileos.com/72d0a4b7-d04c-4aa9-ab50-9429d1abc422.png)
 
 #### 参与贡献
 
