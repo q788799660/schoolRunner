@@ -39,7 +39,8 @@
 		<van-icon name="new" />最新兼职
 	</van-divider>
 	<!-- 最新兼职列表 -->
-	<van-panel wx:for="{{new}}" wx:for-item="item" wx:for-index="index" wx:key="key" title="{{item.title}}" desc="{{item.date}}" status="{{item.status}}" data-id="{{item._id}}" data-type="{{item.type}}" bindtap="detail">
+	<van-panel wx:for="{{new}}" wx:for-item="item" wx:for-index="index" wx:key="key" title="{{item.title}}" 
+		desc="{{item.date}}" status="{{item.status}}" data-id="{{item._id}}" data-type="{{item.type}}" bindtap="detail" class="panel">
 		<!-- <view>内容</view> -->
 		<van-tag type="success" class="tag">{{item.tagName}}</van-tag>
 	</van-panel>

@@ -1,6 +1,6 @@
 <view>
 	<view class="logo">
-		<image src="../../../../images/logo.png" mode=""></image> 
+		<image src="../../../../images/logo.png" mode="" class="logo-img"></image> 
 	</view>
 	<van-cell-group>
 		<van-cell wx:for="{{List}}" wx:key="key" title="{{item.title}}" value="{{item.value}}" />

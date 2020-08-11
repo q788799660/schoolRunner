@@ -1,6 +1,10 @@
-.tag{
+.panel {
   position: relative;
-  top: -150rpx;
-  left: 0rpx;
+}
+.tag {
+  position: absolute;
+  top: 50%;
+  right: 50rpx;
   z-index: 99;
+  transform: translateY(-50%);
 }

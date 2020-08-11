@@ -10,8 +10,109 @@
 .myJobList{
   display: flex;
   justify-content: space-between;
-  height: 100rpx;
-  line-height: 100rpx;
-  margin: 20rpx;
+  align-items: center;
+  margin: 40rpx;
+  position: relative;
 }
+.myJobList-left-box {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 60rpx;
+  height: 100%;
+}
+.myJobList-left {
+  display: flex;
+  flex-direction: column;
+}
+.myJobList-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  clear: both;
+}
+.settingList {
+  font-size: 30rpx;
+  border: 1rpx solid #eaeaea;
+  padding: 20rpx;
+  box-shadow: 4rpx 4rpx 6rpx 1rpx #eaeaea;
+  position: absolute;
+  right: 20rpx;
+  width: 150rpx;
+  top: 50rpx;
+  text-align: center;
+  z-index: 2;
+  background: white;
+}
+.rename {
+  padding-bottom: 20rpx;
 
+}
+.del {
+
+}
+.myJobList-left-title {
+  font-size: 32rpx;
+}
+.myJobList-left-date {
+  font-size: 26rpx;
+}
+.upload {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+.mask {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.alert {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 350rpx;
+  width: 500rpx;
+  background:#f7e7bd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20rpx;
+}
+.name {
+  width: 80%;
+  margin: 20rpx auto;
+  border: 1rpx solid #d9c6a5;
+  padding: 10rpx 20rpx ;
+  border-radius: 20rpx;
+  color: #c26565;
+  font-size: 30rpx;
+}
+.alert-title {
+  color: #a35d6a;
+  text-align: center;
+}
+.alert-btn {
+  background: #c26565;
+  color: #f7e7bd;
+  width: 150rpx;
+  height: 80rpx;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  box-shadow: 4rpx 4rpx 4rpx 4rpx #a35d6a;
+}
+.alert-title-input-placeholder {
+  font-size: 30rpx;
+  
+}
+.close-alert {
+  position: absolute;
+  right: 15rpx;
+  top: 10rpx;
+}

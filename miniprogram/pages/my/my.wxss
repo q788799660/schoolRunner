@@ -52,8 +52,12 @@
 }
 .branch{
   height: 80rpx;
-  line-height: 60rpx;
-
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #eaeaea;
+  padding-bottom: 10rpx;
+}
+.branch + .branch {
+  padding-top: 10rpx;
 }
 .right{
   color: #cac7c7;

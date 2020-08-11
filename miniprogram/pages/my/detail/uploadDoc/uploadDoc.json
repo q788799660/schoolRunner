@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-
+    "van-icon": "../../../../miniprogram_npm/weapp/dist/icon/index"
   },
   "enablePullDownRefresh": false,
   "navigationBarTitleText":"简历上传"

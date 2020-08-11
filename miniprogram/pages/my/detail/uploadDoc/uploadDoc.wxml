@@ -6,11 +6,33 @@
 	</view>
 </view>
 <view wx:if="{{!show}}">
-	<view wx:for="{{myJobList}}" wx:key="key" wx:for-index="index" data-index="{{index}}" bindtap="openDoc" class="myJobList" >
-		<view>{{item.title}}</view>
-		<view>{{item.date}}</view>
+	<view class="mask" wx:if="{{showMask}}">
+		<view class="alert">
+			<van-icon name="clear" class="close-alert" bindtap="isShowAlert" color="#c26565"/>
+			<text class="alert-title">新标题</text>
+			<input type="text" maxlength="8" placeholder="请输入简历标题" class="name" placeholder-class="alert-title-input-placeholder"
+			model:value="{{newTitle}}"/>
+			<button class="alert-btn" bindtap="rename">修改</button>
+		</view>
+	</view>
+	<view wx:for="{{myJobList}}" wx:key="key" wx:for-index="index" data-index="{{index}}" 
+		class="myJobList" >
+		<view class="myJobList-left-box">
+			<van-icon name="description" color="skyblue" class="logo"/>
+			<view class="myJobList-left">
+				<view class="myJobList-left-title">{{item.title}}</view>
+				<view class="myJobList-left-date">{{item.date}}</view>
+			</view>	
+		</view>
+		<view class="myJobList-right">
+			<van-icon name="ellipsis" bindtap="settingList" data-index="{{index}}"/>
+			<view class="settingList" wx:if="{{index === clickIndex}}" >
+				<view class="rename" bindtap="isShowAlert" data-id="{{index}}">修改名称</view>
+				<view class="del" bindtap="del" data-id="{{index}}">删除简历</view>
+			</view>
+		</view>
 	</view>
 </view>
 <view>
-	<button type="primary" bindtap="upload">上传简历</button>
+	<button type="primary" bindtap="upload" class="upload">上传简历</button>
 </view>

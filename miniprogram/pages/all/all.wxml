@@ -14,6 +14,7 @@
 	data-id="{{item._id}}"
 	data-type="{{item.type}}"
 	bindtap="detail"
+	class="panel"
 	>
 		<van-tag type="success" class="tag">{{item.tagName}}</van-tag>
 	</van-panel>
