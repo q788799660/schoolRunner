@@ -16,7 +16,7 @@
 		</view>
 	</view>
 	<view wx:for="{{myJobList}}" wx:key="key" wx:for-index="index" data-index="{{index}}" 
-		class="myJobList" >
+		class="myJobList" bindtap="openDoc">
 		<view class="myJobList-left-box">
 			<van-icon name="description" color="skyblue" class="logo"/>
 			<view class="myJobList-left">
