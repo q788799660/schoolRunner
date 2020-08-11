@@ -11,7 +11,7 @@ Page({
     this.getNew();
   },
   getNew(){
-    jobDetail.get().then((res)=>{
+    jobDetail.orderBy('date','desc').get().then((res)=>{
       for (let i = 0; i < res.data.length; i++) {
         const element = res.data[i];
         res.data[i].date = util.formatDate(element.date);
