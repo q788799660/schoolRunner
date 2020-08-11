@@ -3,14 +3,15 @@
 #### 介绍
 大学生各类兼职不靠谱？一款基于云开发的微信小程序——校园兼职，功能有 搜索兼职，发布兼职，上传简历，我的投的等等。
 #### 界面效果图
+![rename](https://images.gitee.com/uploads/images/2020/0811/181421_6593bf59_4896788.png "rename.png")
 ![index](https://images.gitee.com/uploads/images/2020/0406/093813_3079185c_4896788.png "index.png")
-![my](https://images.gitee.com/uploads/images/2020/0406/093804_c76fd552_4896788.png "my.png")
+![my](https://images.gitee.com/uploads/images/2020/0811/181405_9139e201_4896788.png "my.png")
 ![pub](https://images.gitee.com/uploads/images/2020/0406/093831_c847068d_4896788.png "pub.png")
 ![toudi](https://images.gitee.com/uploads/images/2020/0406/093854_c63bf907_4896788.png "toudi.png")
-![upload](https://images.gitee.com/uploads/images/2020/0406/093905_07c0ac6d_4896788.png "upload.png")
+![upload](https://images.gitee.com/uploads/images/2020/0811/181440_1aedfdd3_4896788.png "upload.png")
 ![detail2](https://images.gitee.com/uploads/images/2020/0406/093746_f23d66a5_4896788.png "detail2.png")
 ![detail](https://images.gitee.com/uploads/images/2020/0406/093735_a653546d_4896788.png "detail.png")
-![all](https://images.gitee.com/uploads/images/2020/0406/093443_c815ab98_4896788.png "all.png")
+![all](https://images.gitee.com/uploads/images/2020/0811/181254_80f019b0_4896788.png "list.png")
 ![about](https://images.gitee.com/uploads/images/2020/0406/093415_80dbcfea_4896788.png "about.png")
 #### 安装教程
 
