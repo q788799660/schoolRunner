@@ -6,7 +6,7 @@
   [微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)
   可以用开发版
 #### 调试基础库
-    用到的调试基础库为 2.10.3
+    用到的调试基础库为 2.12.0
 #### 将代码导入到开发者工具
 打开 **微信开发者工具** ，点击菜单“项目 > 导入项目”，按照提示导入小程序代码。具体请参考[官方文档](https://developers.weixin.qq.com/miniprogram/dev/framework/)
 
@@ -23,7 +23,7 @@
 | --------- | ------------------ | ---------------------------- |
 | info      | 用户信息           | 所有用户可读，仅创建者可读写 |
 | jobDetail | 发布的招聘详细信息 | 自定义权限                   |
-| jobList   | 用户简历列表       | 仅创建者可读写               |
+| jobList   | 用户简历列表       | 自定义权限               |
 
 
 #### 云存储

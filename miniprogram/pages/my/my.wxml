@@ -32,6 +32,6 @@
       </navigator>
     </view>  
   </view>
-  <view class="split"></view>
+  <!-- <view class="split"></view> -->
   <button open-type="getUserInfo" bindgetuserinfo="getUserInfomation" class="btn" wx:if="{{show}}">点击获取用户信息</button>
 </view>

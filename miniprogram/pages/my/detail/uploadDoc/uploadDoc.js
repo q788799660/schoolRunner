@@ -32,6 +32,7 @@ Page({
     wx.chooseMessageFile({
       count: 1,
       type:'file',
+      extension: ['doc', 'docx', 'pdf'],
       success:(res)=>{
         let tempFilePaths = res.tempFiles[0].path
         let title = res.tempFiles[0].name;

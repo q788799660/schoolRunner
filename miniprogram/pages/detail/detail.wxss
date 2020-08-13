@@ -1,3 +1,7 @@
+.detail-container {
+  background: #fbfae1;
+  height: 100vh;
+}
 .footer{
   position: fixed;
   left: calc(50% - 16rpx - 33rpx);
@@ -10,16 +14,42 @@
 .panel{
   background: rgb(170, 66, 66)
 }
-.call{
-  color: rgba(25, 137, 250, 1);
+.call, .address{
+  color: #64a36f;
   margin: 20rpx 20rpx;
+  font-size: 24rpx;
 }
 .address{
-  margin: 20rpx 20rpx;
-  color: rgba(179, 197, 215, 1);
+
 }
 .context{
   line-height: 70rpx;
   margin: 20rpx 20rpx;
+  word-wrap: break-word;
+}
+.head {
+  display: grid;
+  grid-template-rows: 100rpx;
+  grid-template-columns: 80% 20%;
+  align-items: center;
+  border-bottom: 1rpx solid #e6f3de;
+  padding: 20rpx 30rpx;
+}
+.head-left {
 
+}
+.head-title {
+  font-size: 32rpx;
+  width: 500rpx;
+  word-wrap: break-word;
+  max-height: 100rpx;
+  overflow: hidden;
+}
+.head-time {
+  font-size: 26rpx;
+  color: #888;
+  margin-top: 10rpx;
+}
+.head-right {
+  color: #ffe121;
 }

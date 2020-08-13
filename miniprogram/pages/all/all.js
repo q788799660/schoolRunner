@@ -11,7 +11,7 @@ Page({
     this.getNew();
   },
   getNew(){
-    jobDetail.orderBy('date','desc').get().then((res)=>{
+    jobDetail.orderBy('date','desc').limit(10).get().then((res)=>{
       for (let i = 0; i < res.data.length; i++) {
         const element = res.data[i];
         res.data[i].date = util.formatDate(element.date);
@@ -25,7 +25,7 @@ Page({
   },
   // 上拉触底
   onReachBottom: function() {
-    let page = this.data.page + 20;
+    let page = this.data.page + 10;
     jobDetail.skip(page).get().then((res)=>{
       let newData = res.data;
       let oldData = this.data.new;

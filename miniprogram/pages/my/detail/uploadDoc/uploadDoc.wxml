@@ -1,10 +1,11 @@
-<view class="myJobDoc" bindtap="onChange">
-	<view>我的简历</view>
-	<view >
-    <image src="{{icon[0]}}" wx:if="{{show}}" class="icon"></image>
-    <image src="{{icon[1]}}" wx:else class="icon"></image>
+<view class="main">
+	<view class="myJobDoc" bindtap="onChange">
+		<view>我的简历</view>
+		<view >
+			<image src="{{icon[0]}}" wx:if="{{show}}" class="icon"></image>
+			<image src="{{icon[1]}}" wx:else class="icon"></image>
+		</view>
 	</view>
-</view>
 <view wx:if="{{!show}}">
 	<view class="mask" wx:if="{{showMask}}">
 		<view class="alert">
@@ -35,4 +36,5 @@
 </view>
 <view>
 	<button type="primary" bindtap="upload" class="upload">上传简历</button>
+</view>
 </view>

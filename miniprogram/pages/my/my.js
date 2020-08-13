@@ -17,6 +17,10 @@ Page({
         url: "./detail/pub/pub"
       },
       {
+        name: "我的招聘",
+        url: "./detail/myPub/myPub"
+      },
+      {
         name: "联系我们",
         url: "./detail/contact/contact"
       }

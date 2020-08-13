@@ -1,0 +1,26 @@
+<view>
+  <view wx:for="{{offerList}}" wx:key="index" class="job-list">
+    <view bindtap="onExp" data-index="{{index}}" class="job-list-item">
+      <text class="title">{{item.title}}</text>
+      <block class="expIcon">
+        <van-icon name="arrow-down" wx:if="{{index !== clickIndex}}"/>
+        <van-icon name="arrow-up" wx:else />
+      </block>
+    </view>
+    <block wx:if="{{index === clickIndex}}">
+      <view wx:for="{{item.jobDocList}}" wx:key="i" wx:for-item="jobDocItem" wx:for-index="i"  class="job-list-doc" 
+        data-index="{{index}}" data-jobDocListIndex="{{i}}" bindtap="showJobList">
+        <van-icon name="orders-o" color="#0c99c1" class="icon"/>
+        <view class="item-right">
+          <view class="title">
+            {{jobDocItem.value}}
+          </view>
+          <view class="date"> 
+            {{jobDocItem.date}}
+          </view>
+        </view>
+      </view>   
+    </block>
+
+  </view>
+</view>

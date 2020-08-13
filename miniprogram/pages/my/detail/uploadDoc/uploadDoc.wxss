@@ -1,7 +1,13 @@
+.main {
+  background: #fbfae1;
+  height: 100vh;
+}
 .myJobDoc{
   display: flex;
   justify-content: space-between;
-  margin: 20rpx;
+  padding: 20rpx 0;
+  margin: 0 20rpx;
+  border-bottom: 1rpx solid #eaeaea;
 }
 .icon{
   width: 50rpx;
@@ -13,6 +19,8 @@
   align-items: center;
   margin: 40rpx;
   position: relative;
+  border-bottom: 1rpx solid #eaeaea;
+  padding-bottom: 40rpx;
 }
 .myJobList-left-box {
   display: flex;

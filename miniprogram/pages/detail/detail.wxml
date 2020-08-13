@@ -1,12 +1,17 @@
-<view>
-	<van-panel title="{{info.title}}" desc="{{time}}" status="{{info.status}}" use-footer-slot>
-		<view class="call">{{info.phone}}</view>
-		<view class="address">{{info.address}}</view>
+<view class="detail-container">
+		<view class="head">
+			<view class="head-left">
+				<view class="head-title">{{info.title}}</view>
+				<view class="head-time">{{time}}</view>
+			</view>
+			<view class="head-right">{{info.salary}}</view>
+		</view>
+		<view class="call">联系手机：{{info.phone}}</view>
+		<view class="address">联系地址：{{info.address}}</view>
 		<view class="context">{{info.context}}</view>
 		<!-- <view slot="footer" class="footer">
 			
 		</view> -->
-	</van-panel>
 	<button class="btn" type="primary" bindtap="join">我要报名</button>
 	<van-popup show="{{ show }}" bind:close="onClose" position="bottom" custom-style="height: 50%;">
 	<van-picker

@@ -14,7 +14,7 @@ Page({
   },
   getJobDetail(){
     let { openid } = app.globalData;
-    jobDetail.where({
+    jobDetail.orderBy('date','desc').where({
       jobDocList: _.elemMatch({
         openid
       })

@@ -1,0 +1,31 @@
+.job-list {
+  min-height: 50rpx;
+  padding: 20rpx;
+  transition: all 1s linear;
+  border-bottom: 1rpx solid #eaeaea;
+}
+.job-list-doc {
+  display: grid;
+  grid-template-columns: 10% 80%;
+  justify-content: center;
+  justify-items: center;
+  padding: 20rpx;
+}
+.icon {
+  justify-self: end;
+}
+.item-right {
+  justify-self: start;
+  margin-left: 30rpx;
+}
+.title {
+  font-size: 30rpx;
+}
+.date {
+  font-size: 26rpx;
+  color: #888;
+}
+.job-list-item {
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
