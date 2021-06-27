@@ -44,6 +44,9 @@
 		<!-- <view>内容</view> -->
 		<van-tag type="success" class="tag">{{item.tagName}}</van-tag>
 	</van-panel>
+  <view class="shareBox">
+    <button type="primary" open-type="contact" class="kfBtn">在线咨询</button>
+  </view>
 	<!-- 火爆分割线 -->
 	<!-- <van-divider contentPosition="center" customStyle="color: #1989fa;border-color: #eaeaea;font-size: 17px;margin:40rpx">
 		<van-icon name="fire" />火爆兼职

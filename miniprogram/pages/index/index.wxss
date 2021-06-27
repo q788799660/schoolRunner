@@ -31,4 +31,13 @@
   margin: 20rpx auto;
   border-radius: 40px;
 }
-
+.shareBox {
+  position: fixed;
+  right: 0;
+  top: 60%;
+  z-index: 9999;
+  width: 100rpx;
+}
+.kfBtn {
+  font-size: 14px;
+}
